@@ -1,3 +1,5 @@
+<!-- <07.03.26>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,4 +18,69 @@
     
 </body>
 <script src ="script.js"></script>
-</html>
+</html>  -->
+
+
+<!--10.03.26-->
+
+<!-- <form id="userform">
+    <input type="text" id ="username" placeholder="Enter Name ">
+    <input type="email" id="usermail" placeholder="Enter Email">
+    <button type="submit" >Submit Data</button>
+
+
+</form>
+ <div id="displayArea"></div>
+
+ <script>
+    const form = document.getElementById('userform');
+    const displayArea = document.getElementById('displayArea');
+
+    form.addEventListener('submit',function(event){
+        event.preventDefault();
+
+        const name = document.getElementById('username').value;
+        const email = document.getElementById('usermail').value;
+        
+        displayArea.innerHTML = `
+            <h3>Submitted Data</h3>
+            <p>Name: ${name}</p>
+            <p>Email: ${email}</p>
+            
+        `;
+    });
+ </script> -->
+
+ <Assignment1: contact form with message field>
+ <form id="userform">
+    <input type="text" id ="username" placeholder="Enter Name ">
+    <input type="email" id="usermail" placeholder="Enter Email">
+    <input type="message" id="usermessage" placeholder="Enter Message">
+    <button type="submit" >Submit Data</button>
+</form>
+ <div id="displayArea"></div>
+
+ <script>
+    const form = document.getElementById('userform');
+    const displayArea = document.getElementById('displayArea');
+
+    form.addEventListener('submit',function(event){
+        event.preventDefault();
+
+        const name = document.getElementById('username').value;
+        const email = document.getElementById('usermail').value;
+        const message = document.getElementById('usermessage').value;
+        
+        displayArea.innerHTML = `
+            
+            <h3>Submitted Data</h3>
+            <p>Name: ${name}</p>
+            <p>Email: ${email}</p>
+            <p>Message: ${message}</p>
+            
+            
+        `;
+    });
+ </script>
+
+ </Assignment2:>

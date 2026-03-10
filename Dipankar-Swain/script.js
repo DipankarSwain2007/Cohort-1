@@ -37,4 +37,5 @@
 //     console.log(ele.innerText)
 // }
 
-console.log(Element.textContent)
+// console.log(Element.textContent)
+
