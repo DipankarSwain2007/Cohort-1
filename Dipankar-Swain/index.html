@@ -51,7 +51,7 @@
     });
  </script> -->
 
- <Assignment1: contact form with message field>
+ <!-- <Assignment1: contact form with message field>
  <form id="userform">
     <input type="text" id ="username" placeholder="Enter Name ">
     <input type="email" id="usermail" placeholder="Enter Email">
@@ -81,6 +81,39 @@
             
         `;
     });
- </script>
+ </script> -->
 
  </Assignment2:>
+ <To make todo list app>
+    <form id="todoform">
+        <input type="text" id ="todoinput" placeholder="Enter your task ">
+        <button type="submit" >Add Task</button>
+        <button type="button" id="clearbtn">Clear Tasks</button>
+    </form>
+
+        <script>
+            const todoForm = document.getElementById('todoform');
+            const todoInput = document.getElementById('todoinput');
+            const clearBtn = document.getElementById('clearbtn');
+
+            todoForm.addEventListener('submit', function(event){
+                event.preventDefault();
+                const task = todoInput.value.trim();
+                if(task){
+                    addTask(task);
+                    todoInput.value = '';
+                }
+            });
+
+            clearBtn.addEventListener('click', function(){
+                const tasks = document.querySelectorAll('.task');
+                tasks.forEach(task => task.remove());
+            });
+
+            function addTask(task){
+                const taskItem = document.createElement('div');
+                taskItem.classList.add('task');
+                taskItem.textContent = task;
+                document.body.appendChild(taskItem);
+            }
+        </script>
