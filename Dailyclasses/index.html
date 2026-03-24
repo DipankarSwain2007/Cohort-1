@@ -1,0 +1,120 @@
+<!-- <07.03.26>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my doc title </title>
+</head>
+<body>
+    <h1 class ="phela"> Hello world </h1>
+    <h1 class ="phela"> Hiiiiii guyssss </h1>
+    <h2 class ="dusra">hiii</h2>
+    <div id="container">
+        <h1>hola</h1>
+
+    </div>
+    
+</body>
+<script src ="script.js"></script>
+</html>  -->
+
+
+<!--10.03.26-->
+
+<!-- <form id="userform">
+    <input type="text" id ="username" placeholder="Enter Name ">
+    <input type="email" id="usermail" placeholder="Enter Email">
+    <button type="submit" >Submit Data</button>
+
+
+</form>
+ <div id="displayArea"></div>
+
+ <script>
+    const form = document.getElementById('userform');
+    const displayArea = document.getElementById('displayArea');
+
+    form.addEventListener('submit',function(event){
+        event.preventDefault();
+
+        const name = document.getElementById('username').value;
+        const email = document.getElementById('usermail').value;
+        
+        displayArea.innerHTML = `
+            <h3>Submitted Data</h3>
+            <p>Name: ${name}</p>
+            <p>Email: ${email}</p>
+            
+        `;
+    });
+ </script> -->
+
+ <!-- <Assignment1: contact form with message field>
+ <form id="userform">
+    <input type="text" id ="username" placeholder="Enter Name ">
+    <input type="email" id="usermail" placeholder="Enter Email">
+    <input type="message" id="usermessage" placeholder="Enter Message">
+    <button type="submit" >Submit Data</button>
+</form>
+ <div id="displayArea"></div>
+
+ <script>
+    const form = document.getElementById('userform');
+    const displayArea = document.getElementById('displayArea');
+
+    form.addEventListener('submit',function(event){
+        event.preventDefault();
+
+        const name = document.getElementById('username').value;
+        const email = document.getElementById('usermail').value;
+        const message = document.getElementById('usermessage').value;
+        
+        displayArea.innerHTML = `
+            
+            <h3>Submitted Data</h3>
+            <p>Name: ${name}</p>
+            <p>Email: ${email}</p>
+            <p>Message: ${message}</p>
+            
+            
+        `;
+    });
+ </script> -->
+
+ <!-- </Assignment2:>
+ <To make todo list app>
+    <form id="todoform">
+        <input type="text" id ="todoinput" placeholder="Enter your task ">
+        <button type="submit" >Add Task</button>
+        <button type="button" id="clearbtn">Clear Tasks</button>
+    </form>
+
+        <script>
+            const todoForm = document.getElementById('todoform');
+            const todoInput = document.getElementById('todoinput');
+            const clearBtn = document.getElementById('clearbtn');
+
+            todoForm.addEventListener('submit', function(event){
+                event.preventDefault();
+                const task = todoInput.value.trim();
+                if(task){
+                    addTask(task);
+                    todoInput.value = '';
+                }
+            });
+
+            clearBtn.addEventListener('click', function(){
+                const tasks = document.querySelectorAll('.task');
+                tasks.forEach(task => task.remove());
+            });
+
+            function addTask(task){
+                const taskItem = document.createElement('div');
+                taskItem.classList.add('task');
+                taskItem.textContent = task;
+                document.body.appendChild(taskItem);
+            }
+        </script> -->
+

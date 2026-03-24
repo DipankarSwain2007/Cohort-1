@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <h1>Welcome back</h1>
+            <p class="subtitle">Log in to access your website</p>
+
+            <form id="signinForm">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="you@example.com" required>
+                </div>
+                <div class="input-group">
+                    <div style="display: flex; justify-content: space-between;">
+                        <label>Password</label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+                    <div class="password-wrapper">
+                        <input type="password" placeholder="Enter your password" required>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-primary">Log In</button>
+            </form>
+
+            <p class="footer-text">Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+    </div>
+    <script src="signin.js"></script>
+</body>
+</html>
